@@ -100,3 +100,14 @@
       padding: 20px;
     }
 }
+
+@media (orientation: landscape) {
+  .a{
+    margin-bottom: 1em;
+  }
+
+  .a-card {
+    height: 50vh;
+  }
+
+}

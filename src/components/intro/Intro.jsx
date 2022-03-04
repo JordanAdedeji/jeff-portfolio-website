@@ -1,5 +1,5 @@
 import "./intro.css";
-import introVideo from "../../img/intro.mov";
+import introVideo from "../../img/intro2.mp4";
 
 const Intro = () => {
   return (

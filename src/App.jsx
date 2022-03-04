@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Intro from "./components/intro/Intro";
@@ -9,6 +9,10 @@ import { ThemeContext } from "./context";
 const App = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+  useEffect(() => {
+    document.title = "Jeff Maranan"
+  }, [])
+
   return (
     <div
       style={{

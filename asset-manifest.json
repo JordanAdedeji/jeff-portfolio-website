@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.d14f1454.chunk.css",
-    "main.js": "/static/js/main.54de8b23.chunk.js",
-    "main.js.map": "/static/js/main.54de8b23.chunk.js.map",
+    "main.js": "/static/js/main.58ed3c0a.chunk.js",
+    "main.js.map": "/static/js/main.58ed3c0a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b59dd841.js",
     "runtime-main.js.map": "/static/js/runtime-main.b59dd841.js.map",
     "static/js/2.3eee4e58.chunk.js": "/static/js/2.3eee4e58.chunk.js",
@@ -15,9 +15,10 @@
     "static/media/football2.0c89634d.mp4": "/static/media/football2.0c89634d.mp4",
     "static/media/guard.44624efa.mp4": "/static/media/guard.44624efa.mp4",
     "static/media/insta.75e0546a.png": "/static/media/insta.75e0546a.png",
-    "static/media/intro3.59e7b102.mp4": "/static/media/intro3.59e7b102.mp4",
+    "static/media/intro3.5e52c158.mp4": "/static/media/intro3.5e52c158.mp4",
     "static/media/jeff.8fced577.jpg": "/static/media/jeff.8fced577.jpg",
     "static/media/moon.3bea3d39.png": "/static/media/moon.3bea3d39.png",
+    "static/media/poster.55072b19.png": "/static/media/poster.55072b19.png",
     "static/media/sun.f794832a.png": "/static/media/sun.f794832a.png",
     "static/media/youtube.f86b81a3.png": "/static/media/youtube.f86b81a3.png"
   },
@@ -25,6 +26,6 @@
     "static/js/runtime-main.b59dd841.js",
     "static/js/2.3eee4e58.chunk.js",
     "static/css/main.d14f1454.chunk.css",
-    "static/js/main.54de8b23.chunk.js"
+    "static/js/main.58ed3c0a.chunk.js"
   ]
 }

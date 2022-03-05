@@ -1,5 +1,6 @@
 import "./intro.css";
 import introVideo from "../../img/intro3.mp4";
+import poster from "../../img/poster.png";
 
 const Intro = () => {
   return (
@@ -15,7 +16,7 @@ const Intro = () => {
             </div>
           </div>
         </div>
-      <video src={introVideo} muted loop autoplay="" className='introVideo'> </video>
+      <video src={introVideo} poster={poster} muted loop autoplay="" className='introVideo'> </video>
       </div>
     </div>
   );

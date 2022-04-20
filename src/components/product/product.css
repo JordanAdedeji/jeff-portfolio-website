@@ -6,9 +6,9 @@
   overflow: hidden;
 }
 
-.p:nth-child(2) {
-  width: 35%;
-  height: 90%;
+.p:nth-child(4) {
+  margin: 0 auto;
+  margin-top: 1.2em;
 }
 
 .p-browser {
@@ -46,9 +46,11 @@
     width: 70%;
     margin: 1em auto;
   }
+}
 
-  .p:nth-child(2) {
-    width: 70%;
-    height: 80%;
+@media screen and (min-width: 920px) {
+  .p:nth-child(4) {
+    width: 35%;
+    height: 90%;
   }
 }

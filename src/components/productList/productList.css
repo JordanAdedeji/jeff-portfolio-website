@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-top: -8rem;
 }
 
 .pl-texts {
@@ -22,8 +23,15 @@
   margin: 20px 0px;
 }
 
-.pl-list {
+.pl-list1 {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pl-list2 {
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

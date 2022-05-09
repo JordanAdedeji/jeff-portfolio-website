@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.a0d565ca.chunk.css",
-    "main.js": "/static/js/main.bc2b6bde.chunk.js",
-    "main.js.map": "/static/js/main.bc2b6bde.chunk.js.map",
+    "main.css": "/static/css/main.4393919d.chunk.css",
+    "main.js": "/static/js/main.f05c6174.chunk.js",
+    "main.js.map": "/static/js/main.f05c6174.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b59dd841.js",
     "runtime-main.js.map": "/static/js/runtime-main.b59dd841.js.map",
     "static/js/2.7234c9bd.chunk.js": "/static/js/2.7234c9bd.chunk.js",
     "static/js/2.7234c9bd.chunk.js.map": "/static/js/2.7234c9bd.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.a0d565ca.chunk.css.map": "/static/css/main.a0d565ca.chunk.css.map",
+    "static/css/main.4393919d.chunk.css.map": "/static/css/main.4393919d.chunk.css.map",
     "static/js/2.7234c9bd.chunk.js.LICENSE.txt": "/static/js/2.7234c9bd.chunk.js.LICENSE.txt",
+    "static/media/bet365.0609cd9b.mp4": "/static/media/bet365.0609cd9b.mp4",
     "static/media/drone.c5a21808.mp4": "/static/media/drone.c5a21808.mp4",
     "static/media/email.a49e0158.png": "/static/media/email.a49e0158.png",
     "static/media/football2.0c89634d.mp4": "/static/media/football2.0c89634d.mp4",
@@ -17,6 +18,7 @@
     "static/media/insta.75e0546a.png": "/static/media/insta.75e0546a.png",
     "static/media/intro3.5e52c158.mp4": "/static/media/intro3.5e52c158.mp4",
     "static/media/jeff.8fced577.jpg": "/static/media/jeff.8fced577.jpg",
+    "static/media/jeffa.95600cfa.png": "/static/media/jeffa.95600cfa.png",
     "static/media/moon.3bea3d39.png": "/static/media/moon.3bea3d39.png",
     "static/media/poster.55072b19.png": "/static/media/poster.55072b19.png",
     "static/media/sun.f794832a.png": "/static/media/sun.f794832a.png",
@@ -26,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.b59dd841.js",
     "static/js/2.7234c9bd.chunk.js",
-    "static/css/main.a0d565ca.chunk.css",
-    "static/js/main.bc2b6bde.chunk.js"
+    "static/css/main.4393919d.chunk.css",
+    "static/js/main.f05c6174.chunk.js"
   ]
 }

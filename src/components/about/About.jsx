@@ -1,6 +1,6 @@
 import "./about.css";
 import Me from "../../img/jeff.jpg";
-import Me2 from "../../img/jeffa.png";
+import camera from "../../img/editing.jpeg";
 
 const About = () => {
   return (
@@ -8,7 +8,7 @@ const About = () => {
       <div className="a-left">
         <div className="a-card bg">
         <img
-            src={Me2}
+            src={camera}
             alt=""
             className="b-img"
           />

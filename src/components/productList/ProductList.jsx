@@ -5,6 +5,7 @@ import guard from "../../img/guard.mp4"
 import football from "../../img/football2.mp4"
 import trim from "../../img/trim.mp4"
 import bet365 from "../../img/bet365.mp4"
+import chai from "../../img/chai.mp4"
 
 
 const ProductList = () => {
@@ -17,6 +18,7 @@ const ProductList = () => {
         <Product videoImport={drone} />
         <Product videoImport={football} />
         <Product videoImport={trim} />
+        <Product videoImport={chai} />
       </div>
       <div className="pl-list2">
         <Product videoImport={guard} />

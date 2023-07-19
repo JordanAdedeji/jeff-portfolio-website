@@ -24,7 +24,28 @@
 }
 
 .pl-list1 {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pl-list11 {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pl-list4 {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pl-list22 {
+  width: 60%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -35,6 +56,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.pl-list3 {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pl-list3 > * {
+  width: 400px;  
 }
 
 .product {

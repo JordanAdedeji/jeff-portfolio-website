@@ -1,7 +1,6 @@
 import "./contact.css";
 import Email from "../../img/email.png";
 import insta from "../../img/insta.png";
-import youtube from "../../img/youtube.png";
 import { useContext, useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { ThemeContext } from "../../context";

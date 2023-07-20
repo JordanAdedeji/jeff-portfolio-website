@@ -47,10 +47,6 @@ const Contact = () => {
             <a href={'https://www.instagram.com/jeff.maranan/?hl=en'} target="_blank" rel="noopener noreferrer" ><img className="c-icon" src={insta} alt="" /></a>
               @jeff.maranan
             </div>
-            <div className="c-info-item">
-              <a href={'https://www.youtube.com/c/OneUpisodes/featured'} target="_blank" rel="noopener noreferrer" ><img className="c-icon" src={youtube} alt="" /></a>
-              OneUpisodes
-            </div>
           </div>
         </div>
         <div className="c-right">

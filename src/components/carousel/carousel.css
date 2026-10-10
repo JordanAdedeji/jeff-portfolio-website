@@ -29,13 +29,14 @@
   box-sizing: border-box;
 }
 
-/* Fit each video to the same height whatever its aspect ratio. The width cap
-   leaves room for the arrows: .pl has 96px side padding at this size. */
+/* Every video is the same height whatever its aspect ratio, capped by width so
+   it never crowds the arrows (.pl has 96px side padding at this size). Sizing
+   comes from --r (width / height) rather than the file, so a slide is the right
+   size before its video has loaded. */
 .carousel .p-img {
-  width: auto;
+  aspect-ratio: var(--r, 1.7778);
+  width: min(calc(100vw - 320px), calc(min(70vh, 640px) * var(--r, 1.7778)));
   height: auto;
-  max-height: min(70vh, 640px);
-  max-width: calc(100vw - 320px);
 }
 
 .carousel-arrow {
@@ -141,6 +142,6 @@
 /* productList.css gives .pl 16px side padding at this width. */
 @media screen and (max-width: 920px) {
   .carousel .p-img {
-    max-width: calc(100vw - 32px);
+    width: min(calc(100vw - 32px), calc(min(70vh, 640px) * var(--r, 1.7778)));
   }
 }

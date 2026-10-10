@@ -24,19 +24,19 @@ const ProductList = () => {
         <h1 className="pl-title">Create & inspire.</h1>
       </div>
       <Carousel>
-        <Product videoImport={drone} />
-        <Product videoImport={football} />
-        <Product videoImport={trim} thumbnailTime={3} />
-        <Product videoImport={chai} />
-        <Product videoImport={guard} />
-        <Product videoImport={bet365} thumbnailTime={2} />
-        <Product videoImport={sixScores} />
-        <Product videoImport={winnings} />
-        <Product videoImport={gamesVideo} thumbnailTime={3} />
-        <Product videoImport={converse} />
-        <Product videoImport={final} thumbnailTime={3} />
-        <Product videoImport={forfeit} />
-        <Product videoImport={influencer} />
+        <Product videoImport={drone} width={576} height={720} />
+        <Product videoImport={football} width={720} height={900} />
+        <Product videoImport={trim} thumbnailTime={3} width={720} height={900} />
+        <Product videoImport={chai} width={720} height={900} />
+        <Product videoImport={guard} width={1280} height={720} />
+        <Product videoImport={bet365} thumbnailTime={2} width={1280} height={720} />
+        <Product videoImport={sixScores} width={1280} height={720} />
+        <Product videoImport={winnings} width={1280} height={720} />
+        <Product videoImport={gamesVideo} thumbnailTime={3} width={720} height={1560} />
+        <Product videoImport={converse} width={720} height={1280} />
+        <Product videoImport={final} thumbnailTime={3} width={1280} height={720} />
+        <Product videoImport={forfeit} width={720} height={720} />
+        <Product videoImport={influencer} width={720} height={1280} />
       </Carousel>
     </div>
   );

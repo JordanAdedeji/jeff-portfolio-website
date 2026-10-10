@@ -1,5 +1,5 @@
 import "./carousel.css";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { cloneElement, useCallback, useEffect, useRef, useState } from "react";
 
 const Carousel = ({ children }) => {
   const trackRef = useRef();
@@ -61,7 +61,7 @@ const Carousel = ({ children }) => {
             aria-roledescription="slide"
             aria-label={`${i + 1} of ${slides.length}`}
           >
-            {slide}
+            {cloneElement(slide, { load: Math.abs(i - active) <= 1 })}
           </div>
         ))}
       </div>

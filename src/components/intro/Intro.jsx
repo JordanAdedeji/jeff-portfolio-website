@@ -1,12 +1,19 @@
 import "./intro.css";
+import { useState } from "react";
 import introVideo from "../../img/intro3.mp4";
-import poster from "../../img/poster.png";
+import introVideoSmall from "../../img/intro3-small.mp4";
+import poster from "../../img/poster.jpg";
+
+// Phones get a lighter file: it starts sooner and keeps playing on weaker connections.
+const isSmallScreen = () => window.matchMedia("(max-width: 768px)").matches;
 
 const Intro = () => {
+  const [videoSrc] = useState(() => (isSmallScreen() ? introVideoSmall : introVideo));
+
   return (
     <div className="i">
       <div className="i-left">
-        <video src={introVideo} poster={poster} autoPlay muted loop playsInline className='introVideo'> </video>
+        <video src={videoSrc} poster={poster} autoPlay muted loop playsInline className='introVideo'> </video>
         <div className='title-name'>
           <h1 className="i-name">Jefferson Maranan</h1>
           <div className="i-title">

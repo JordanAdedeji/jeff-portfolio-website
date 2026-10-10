@@ -1,5 +1,6 @@
 import "./productList.css";
 import Product from "../product/Product";
+import Carousel from "../carousel/Carousel";
 import drone from "../../img/drone.mp4"
 import guard from "../../img/guard.mp4"
 import football from "../../img/football2.mp4"
@@ -13,7 +14,6 @@ import gamesVideo from "../../img/games-video.mp4"
 import sixScores from "../../img/sixScores.mp4"
 import winnings from "../../img/winnings.mp4"
 import forfeit from "../../img/forfeit.mp4"
-import gamesVideoAppStore from "../../img/games-video-app-store.mp4"
 import influencer from "../../img/influencer.mp4"
 
 
@@ -23,32 +23,21 @@ const ProductList = () => {
       <div className="pl-texts">
         <h1 className="pl-title">Create & inspire.</h1>
       </div>
-      <div className="pl-list1">
+      <Carousel>
         <Product videoImport={drone} />
         <Product videoImport={football} />
-        <Product videoImport={trim} />
+        <Product videoImport={trim} thumbnailTime={3} />
         <Product videoImport={chai} />
-      </div>
-      <div className="pl-list2">
         <Product videoImport={guard} />
-        <Product videoImport={bet365} />
-      </div>
-      <div className="pl-list11">
+        <Product videoImport={bet365} thumbnailTime={2} />
         <Product videoImport={sixScores} />
         <Product videoImport={winnings} />
-      </div>
-      <div className="pl-list22">
-        <Product videoImport={gamesVideo} />
+        <Product videoImport={gamesVideo} thumbnailTime={3} />
         <Product videoImport={converse} />
-      </div>
-      <div className="pl-list4">
-        <Product videoImport={final} />
-      </div>
-      <div className="pl-list5">
+        <Product videoImport={final} thumbnailTime={3} />
         <Product videoImport={forfeit} />
-        <Product videoImport={gamesVideoAppStore} />
         <Product videoImport={influencer} />
-      </div>
+      </Carousel>
     </div>
   );
 };

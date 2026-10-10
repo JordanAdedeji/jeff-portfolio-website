@@ -31,6 +31,7 @@
 .i-name {
   font-size: 60px;
   color: white;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
 }
 
 .i-title {
@@ -110,7 +111,18 @@
   .i-desc{
     display: none;
   }
-  
+
+  .title-name {
+    padding: 0 20px;
+  }
+
+  .i-name {
+    font-size: 40px;
+  }
+
+  .i-title-item {
+    font-size: 24px;
+  }
 }
 
 .title-name {

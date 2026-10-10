@@ -1,0 +1,149 @@
+.carousel {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  outline: none;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+/* Fit each video to the same height whatever its aspect ratio. */
+.carousel .p {
+  width: auto;
+  margin: 0;
+}
+
+/* Cap by height and width so the video keeps its aspect ratio and the
+   browser-window bar always sits flush against it. */
+.carousel .p-img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-height: min(70vh, 640px);
+  max-width: calc(100vw - 220px);
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: calc(50% - 20px);
+  z-index: 3;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: white;
+  font-size: 28px;
+  line-height: 1;
+  padding: 0 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.2s, background-color 0.2s;
+}
+
+.carousel-arrow:hover:not(:disabled) {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-arrow:disabled {
+  opacity: 0.25;
+  cursor: default;
+}
+
+.carousel-prev {
+  left: 8px;
+}
+
+.carousel-next {
+  right: 8px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.carousel-counter {
+  display: none;
+}
+
+/* 24px hit area around a 10px visible dot. */
+.carousel-dot {
+  width: 24px;
+  height: 24px;
+  padding: 7px;
+  border: none;
+  border-radius: 50%;
+  background-color: lightgrey;
+  background-clip: content-box;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.carousel-dot.active {
+  background-color: #555;
+  transform: scale(1.2);
+}
+
+/* Phones and small tablets: arrows move below the video, beside a counter,
+   so they never cover the picture and are easy to tap. */
+@media screen and (max-width: 600px) {
+  .carousel-arrow {
+    top: auto;
+    bottom: 0;
+  }
+
+  .carousel-prev {
+    left: 0;
+  }
+
+  .carousel-next {
+    right: 0;
+  }
+
+  .carousel-dots {
+    display: none;
+  }
+
+  .carousel-counter {
+    display: block;
+    margin-top: 8px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+/* productList.css gives .pl 16px side padding at this width. */
+@media screen and (max-width: 920px) {
+  .carousel .p-img {
+    max-width: calc(100vw - 32px);
+  }
+}

@@ -81,7 +81,7 @@ button {
 @media screen and (max-width: 480px) {
   .c-wrapper {
     flex-direction: column;
-    padding: 0px 50px;
+    padding: 0px 24px 0px 44px;
   }
 
   .c {
@@ -96,6 +96,12 @@ button {
   .c-info-item {
     margin: 20px 0px;
     width: 100%;
+    font-size: 15px;
+    overflow-wrap: anywhere;
+  }
+
+  .c-icon {
+    margin-right: 14px;
   }
 
   .c-desc {
@@ -117,5 +123,11 @@ button {
 
   button {
     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .c-info-item {
+    font-size: 13px;
   }
 }

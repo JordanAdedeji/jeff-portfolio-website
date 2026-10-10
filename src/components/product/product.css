@@ -6,32 +6,6 @@
   /* overflow: hidden; */
 }
 
-.pl-list11 .p:nth-child(1) {
-  width: 40%;
-}
-
-.pl-list11 .p:nth-child(2) {
-  width: 40%
-}
-
-.pl-list22 .p:nth-child(1) {
-  width: 24.5%;
-}
-
-.pl-list22 .p:nth-child(2) {
-  width: 30%;
-}
-
-.pl-list4 .p:nth-child(1) {
-  width: 35%;
-  height: 20%;
-  margin: 0 auto;
-}
-
-.pl-list5 .p {
-  width: 28%;
-}
-
 .p-browser {
   height: 20px;
   background-color: rgb(243, 242, 242);
@@ -66,49 +40,5 @@
   .p {
     width: 70%;
     margin: 1em auto;
-  }
-
-  .pl-list2 .p:nth-child(1) {
-    width: 100%
-  }
-
-  .pl-list2 .p:nth-child(2) {
-    width: 100%
-  }
-
-  .pl-list11 .p:nth-child(1) {
-    width: 100%
-  }
-  
-  .pl-list11 .p:nth-child(2) {
-    width: 100%
-  }
-  
-  .pl-list22 .p:nth-child(1) {
-    width: 70%;
-  }
-  
-  .pl-list22 .p:nth-child(2) {
-    width: 70%;
-  }
-
-  .pl-list4 .p:nth-child(1) {
-    width: 70%;
-  }
-
-  .pl-list5 .p {
-    width: 70%;
-  }
-}
-
-@media screen and (min-width: 920px) {
-  .pl-list2 .p:nth-child(1) {
-    width: 40%;
-    height: 90%;
-  }
-
-  .pl-list2 .p:nth-child(2) {
-    width: 40%;
-    height: 90%;
   }
 }

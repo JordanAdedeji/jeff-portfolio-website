@@ -26,3 +26,10 @@
     position: absolute;
     cursor: pointer;
 }
+
+/* Invisible 44px-ish hit area; the visible switch stays small. */
+.t-button::after {
+    content: "";
+    position: absolute;
+    inset: -10px;
+}

@@ -28,6 +28,10 @@
   margin: 0 auto;
 }
 
+.pl-list5 .p {
+  width: 28%;
+}
+
 .p-browser {
   height: 20px;
   background-color: rgb(243, 242, 242);
@@ -89,6 +93,10 @@
   }
 
   .pl-list4 .p:nth-child(1) {
+    width: 70%;
+  }
+
+  .pl-list5 .p {
     width: 70%;
   }
 }

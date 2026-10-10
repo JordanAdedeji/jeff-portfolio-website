@@ -12,6 +12,9 @@ import final from "../../img/final.mp4"
 import gamesVideo from "../../img/games-video.mp4"
 import sixScores from "../../img/sixScores.mp4"
 import winnings from "../../img/winnings.mp4"
+import forfeit from "../../img/forfeit.mp4"
+import gamesVideoAppStore from "../../img/games-video-app-store.mp4"
+import influencer from "../../img/influencer.mp4"
 
 
 const ProductList = () => {
@@ -40,6 +43,11 @@ const ProductList = () => {
       </div>
       <div className="pl-list4">
         <Product videoImport={final} />
+      </div>
+      <div className="pl-list5">
+        <Product videoImport={forfeit} />
+        <Product videoImport={gamesVideoAppStore} />
+        <Product videoImport={influencer} />
       </div>
     </div>
   );

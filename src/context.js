@@ -2,15 +2,13 @@ import { createContext, useReducer } from "react";
 
 export const ThemeContext = createContext();
 
-// First visit follows the device's colour scheme; after that the saved choice wins.
+// Dark is the default; after that the visitor's saved choice wins.
 const getInitialState = () => {
   try {
     const saved = localStorage.getItem("theme");
     if (saved) return { darkMode: saved === "dark" };
   } catch (e) {}
-  return {
-    darkMode: !!(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches),
-  };
+  return { darkMode: true };
 };
 
 const themeReducer = (state, action) => {

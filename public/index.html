@@ -4,13 +4,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta name="description" content="Jefferson Maranan - video editor, videographer and content creator. View the portfolio and get in touch." />
+  <meta name="theme-color" content="#0d0f12" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       font-family: 'Poppins', sans-serif;
     }
   </style>
+  <script>
+    // Set the theme before first paint so there is no flash of the wrong colours.
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      } catch (e) {}
+    })();
+  </script>
 </head>
 
 <body>

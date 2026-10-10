@@ -1,22 +1,14 @@
 import "./about.css";
 import Me from "../../img/jeff.jpg";
-import camera from "../../img/editing.jpeg";
 
 const About = () => {
   return (
     <div className="a">
       <div className="a-left">
-        <div className="a-card bg">
-        <img
-            src={camera}
-            alt=""
-            className="b-img"
-          />
-        </div>
-        <div className="a-card">
+        <div className="a-photo">
           <img
             src={Me}
-            alt=""
+            alt="Jefferson Maranan holding a camera"
             className="a-img"
           />
         </div>

@@ -1,17 +1,14 @@
 .c {
-  position: relative;
-}
-
-.c-bg {
-  width: 20px;
-  height: 100%;
-  background-color: #59b256;
-  position: absolute;
+  padding: 112px 96px;
+  background-color: var(--bg);
 }
 
 .c-wrapper {
-  padding: 50px;
   display: flex;
+  align-items: flex-start;
+  gap: 80px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .c-left {
@@ -20,109 +17,123 @@
 
 .c-right {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .c-title {
-  font-size: 60px;
-  width: 80%;
+  font-size: clamp(32px, 4.5vw, 52px);
+  margin-bottom: 40px;
 }
 
 .c-info-item {
   display: flex;
   align-items: center;
-  margin: 50px 0px;
-  font-weight: 300;
-  width: 70%;
+  gap: 14px;
+  margin: 20px 0;
+  font-weight: 400;
+  color: var(--text);
 }
 
 .c-icon {
+  display: block;
   height: 30px;
-  margin-right: 20px;
+}
+
+/* 44px tap target around the 30px icon without moving it. */
+.c-info-item a {
+  display: block;
+  padding: 7px;
+  margin: -7px -7px -7px -7px;
 }
 
 .c-desc {
-  font-weight: 200;
+  margin-bottom: 24px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--muted);
 }
 
-form {
-  margin-top: 20px;
+.c-desc b {
+  color: var(--text);
+  font-weight: 600;
 }
 
-input {
-  width: 50%;
-  height: 50px;
-  border: none;
-  border-bottom: 1px solid black;
-  margin: 10px 0px;
-  font-size: 14px;
-  padding-left: 10px;
+.c form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
-textarea {
+.c input,
+.c textarea {
   width: 100%;
-  margin: 10px 0px;
-  font-size: 14px;
-  padding-left: 10px;
+  box-sizing: border-box;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background-color: var(--surface);
+  color: var(--text);
+  font-size: 15px;
+  transition: border-color 0.2s, box-shadow 0.2s, background-color 0.3s;
 }
 
-button {
-  border: none;
-  padding: 15px;
-  background-color: #59b256;
-  color: white;
-  font-weight: 500;
-  cursor: pointer;
+.c input {
+  height: 50px;
+  padding: 0 16px;
 }
 
-@media screen and (max-width: 480px) {
-  .c-wrapper {
-    flex-direction: column;
-    padding: 0px 24px 0px 44px;
+.c textarea {
+  padding: 14px 16px;
+  resize: vertical;
+}
+
+.c input::placeholder,
+.c textarea::placeholder {
+  color: var(--muted);
+  opacity: 0.8;
+}
+
+.c input:focus,
+.c textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.c form .btn {
+  align-self: flex-start;
+  margin-top: 6px;
+}
+
+.c-status {
+  font-size: 15px;
+  color: var(--accent);
+}
+
+.c-error {
+  color: #d64545;
+}
+
+@media screen and (max-width: 920px) {
+  .c {
+    padding: 72px 24px;
   }
 
-  .c {
-    height: 80vh;
-    margin-top: 4em;
+  .c-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .c-left,
+  .c-right {
+    width: 100%;
   }
 
   .c-title {
-    font-size: 30px;
+    margin-bottom: 24px;
   }
 
   .c-info-item {
-    margin: 20px 0px;
-    width: 100%;
-    font-size: 15px;
+    margin: 16px 0;
     overflow-wrap: anywhere;
-  }
-
-  .c-icon {
-    margin-right: 14px;
-  }
-
-  .c-desc {
-    display: none;
-  }
-
-  form {
-    margin-top: 0px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  input {
-    width: 35%;
-    height: 40px;
-    margin: 10px;
-    margin-left: 0;
-  }
-
-  button {
-    margin-top: 10px;
   }
 }
 

@@ -24,52 +24,48 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 0;
+  /* Room for the card shadow, which the scroller would otherwise clip. */
+  padding: 40px 0;
   box-sizing: border-box;
 }
 
-/* Fit each video to the same height whatever its aspect ratio. */
-.carousel .p {
-  width: auto;
-  margin: 0;
-}
-
-/* Cap by height and width so the video keeps its aspect ratio and the
-   browser-window bar always sits flush against it. */
+/* Fit each video to the same height whatever its aspect ratio. The width cap
+   leaves room for the arrows: .pl has 96px side padding at this size. */
 .carousel .p-img {
-  display: block;
   width: auto;
   height: auto;
   max-height: min(70vh, 640px);
-  max-width: calc(100vw - 220px);
+  max-width: calc(100vw - 320px);
 }
 
 .carousel-arrow {
   position: absolute;
-  top: calc(50% - 20px);
+  top: calc(50% - 22px);
   z-index: 3;
   width: 44px;
   height: 44px;
-  border: none;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.55);
-  color: white;
-  font-size: 28px;
-  line-height: 1;
   padding: 0 0 4px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--surface);
+  color: var(--text);
+  font-size: 28px;
+  line-height: 1;
   cursor: pointer;
-  transition: opacity 0.2s, background-color 0.2s;
+  box-shadow: 0 0 0 1px var(--border), 0 4px 14px rgba(0, 0, 0, 0.16);
+  transition: opacity 0.2s, background-color 0.2s, color 0.2s;
 }
 
 .carousel-arrow:hover:not(:disabled) {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--accent);
+  color: var(--accent-contrast);
 }
 
 .carousel-arrow:disabled {
-  opacity: 0.25;
+  opacity: 0.35;
   cursor: default;
 }
 
@@ -99,14 +95,14 @@
   padding: 7px;
   border: none;
   border-radius: 50%;
-  background-color: lightgrey;
+  background-color: var(--dot);
   background-clip: content-box;
   cursor: pointer;
   transition: transform 0.2s, background-color 0.2s;
 }
 
 .carousel-dot.active {
-  background-color: #555;
+  background-color: var(--accent);
   transform: scale(1.2);
 }
 
@@ -138,6 +134,7 @@
     text-align: center;
     font-size: 15px;
     font-weight: 500;
+    color: var(--muted);
   }
 }
 

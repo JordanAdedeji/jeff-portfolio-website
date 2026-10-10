@@ -14,11 +14,6 @@ const Product = ({videoImport, thumbnailTime}) => {
 
   return (
     <div className="p">
-      <div className="p-browser">
-        <div className="p-circle"></div>
-        <div className="p-circle"></div>
-        <div className="p-circle"></div>
-      </div>
       <video
         src={thumbnailTime ? `${videoImport}#t=${thumbnailTime}` : videoImport}
         onPlay={handlePlay}

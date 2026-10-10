@@ -1,0 +1,130 @@
+/* Design tokens. Every colour in the site comes from here, so light and dark
+   mode are defined in one place. */
+:root,
+[data-theme="light"] {
+  --bg: #f7f7f5;
+  --surface: #ffffff;
+  --text: #14161a;
+  --muted: #5f6672;
+  --border: #e4e5e8;
+  --dot: #c9ccd2;
+  --accent: #3b5bdb;
+  --accent-hover: #2f4ac0;
+  --accent-contrast: #ffffff;
+  --accent-soft: rgba(59, 91, 219, 0.18);
+  --shadow: 0 24px 60px -24px rgba(16, 24, 40, 0.35);
+  --shadow-card: 0 16px 40px -16px rgba(16, 24, 40, 0.4);
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --bg: #0d0f12;
+  --surface: #15181d;
+  --text: #f2f3f5;
+  --muted: #a0a7b3;
+  --border: #272c34;
+  --dot: #3a404a;
+  --accent: #7c93ff;
+  --accent-hover: #9aabff;
+  --accent-contrast: #0d0f12;
+  --accent-soft: rgba(124, 147, 255, 0.28);
+  --shadow: 0 24px 60px -24px rgba(0, 0, 0, 0.85);
+  --shadow-card: 0 16px 40px -16px rgba(0, 0, 0, 0.9);
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Shared section heading: title with a short accent bar. */
+.a-title,
+.pl-title,
+.c-title {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--text);
+}
+
+.a-title::after,
+.pl-title::after,
+.c-title::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  margin-top: 18px;
+  border-radius: 2px;
+  background-color: var(--accent);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 28px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: var(--accent-contrast);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.btn-ghost {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.55);
+  color: #fff;
+}
+
+.btn-ghost:hover {
+  background-color: rgba(255, 255, 255, 0.14);
+  border-color: #fff;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

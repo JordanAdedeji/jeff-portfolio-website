@@ -1,118 +1,78 @@
 .a {
-  height: 100vh;
   display: flex;
   align-items: center;
-  margin-bottom: -12em;
+  gap: 80px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 112px 96px;
+  box-sizing: content-box;
 }
 
 .a-left {
   flex: 1;
   display: flex;
-  align-items: center;
   justify-content: center;
+}
+
+/* Offset accent frame behind the portrait. */
+.a-photo {
   position: relative;
+  width: min(100%, 360px);
+  aspect-ratio: 4 / 5;
+}
+
+.a-photo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid var(--accent);
+  border-radius: 20px;
+  transform: translate(16px, 16px);
+}
+
+.a-img {
+  position: relative;
+  width: 100%;
   height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
 }
 
 .a-right {
   flex: 1;
 }
 
-.a-card.bg {
-  position: absolute;
-  top: 30px;
-  left: 50px;
-}
-
-.a-card {
-  width: 60%;
-  height: 70vh;
-  border-radius: 30px;
-  position: relative;
-  overflow: hidden;
-}
-
-.a-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.b-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.a-award-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 20px;
-}
-
 .a-title {
+  font-size: clamp(32px, 4vw, 44px);
+  margin-bottom: 24px;
+}
+
+.a-desc {
+  font-size: 18px;
   font-weight: 400;
-  padding: 1.1em;
+  line-height: 1.75;
+  color: var(--muted);
 }
 
-.a-sub {
-  margin: 20px 0px;
-}
-
-.a-desc{
-    font-weight: 300;
-    padding: 2em;
-    font-size: large;
-}
-
-.a-award{
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.a-award-texts{
-    width: 70%;
-}
-
-.a-award-title{
-    font-weight: bold;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-@media screen and (max-width:920px) {
-    .a{
-      flex-direction: column;
-      text-align: center;
-      margin-top: 50px;
-    }
-
-    .a-left {
-      width: 100%;
-    }
-
-    .a-card {
-      height: 30vh;
-    }
-
-    .a-card.bg, .a-award {
-      display: none;
-    }
-
-    .a-right{
-      padding: 20px;
-    }
-}
-
-@media (orientation: landscape) {
-  .a{
-    margin-bottom: 1em;
+@media screen and (max-width: 920px) {
+  .a {
+    flex-direction: column;
+    gap: 56px;
+    padding: 72px 24px;
+    text-align: center;
   }
 
-  .a-card {
-    height: 50vh;
+  .a-photo {
+    width: min(70%, 300px);
   }
 
+  .a-title::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .a-desc {
+    font-size: 16px;
+  }
 }

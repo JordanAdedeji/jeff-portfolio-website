@@ -6,17 +6,21 @@ const Intro = () => {
   return (
     <div className="i">
       <div className="i-left">
+        <video src={introVideo} poster={poster} autoPlay muted loop playsInline className='introVideo'> </video>
         <div className='title-name'>
           <h1 className="i-name">Jefferson Maranan</h1>
           <div className="i-title">
             <div className="i-title-wrapper">
-              <div className="i-title-item video-editor">Video Editor</div>
-              <div className="i-title-item videgrapher">Videographer</div>
-              <div className="i-title-item content-creator">Content Creator</div>
+              <div className="i-title-item">Video Editor</div>
+              <div className="i-title-item">Videographer</div>
+              <div className="i-title-item">Content Creator</div>
             </div>
           </div>
+          <div className="i-cta">
+            <a className="btn btn-primary" href="#work">View my work</a>
+            <a className="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
         </div>
-      <video src={introVideo} poster={poster} muted loop autoplay="" className='introVideo'> </video>
       </div>
     </div>
   );

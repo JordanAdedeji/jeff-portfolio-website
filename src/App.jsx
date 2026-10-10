@@ -13,13 +13,12 @@ const App = () => {
     document.title = "Jeff Maranan"
   }, [])
 
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", darkMode ? "dark" : "light");
+  }, [darkMode])
+
   return (
-    <div
-      style={{
-        backgroundColor: darkMode ? "#222" : "white",
-        color: darkMode && "white",
-      }}
-    >
+    <div>
       <Toggle />
       <Intro />
       <About />

@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.36d5e01c.chunk.css",
-    "main.js": "/static/js/main.8959fd4b.chunk.js",
-    "main.js.map": "/static/js/main.8959fd4b.chunk.js.map",
+    "main.css": "/static/css/main.76f21a5f.chunk.css",
+    "main.js": "/static/js/main.e364135f.chunk.js",
+    "main.js.map": "/static/js/main.e364135f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b59dd841.js",
     "runtime-main.js.map": "/static/js/runtime-main.b59dd841.js.map",
-    "static/js/2.79f55e87.chunk.js": "/static/js/2.79f55e87.chunk.js",
-    "static/js/2.79f55e87.chunk.js.map": "/static/js/2.79f55e87.chunk.js.map",
+    "static/js/2.581ce62e.chunk.js": "/static/js/2.581ce62e.chunk.js",
+    "static/js/2.581ce62e.chunk.js.map": "/static/js/2.581ce62e.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.36d5e01c.chunk.css.map": "/static/css/main.36d5e01c.chunk.css.map",
-    "static/js/2.79f55e87.chunk.js.LICENSE.txt": "/static/js/2.79f55e87.chunk.js.LICENSE.txt",
+    "static/css/main.76f21a5f.chunk.css.map": "/static/css/main.76f21a5f.chunk.css.map",
+    "static/js/2.581ce62e.chunk.js.LICENSE.txt": "/static/js/2.581ce62e.chunk.js.LICENSE.txt",
     "static/media/bet365.0609cd9b.mp4": "/static/media/bet365.0609cd9b.mp4",
     "static/media/chai.3f4f6b9c.mp4": "/static/media/chai.3f4f6b9c.mp4",
     "static/media/converse.11b6003a.mp4": "/static/media/converse.11b6003a.mp4",
     "static/media/drone.c5a21808.mp4": "/static/media/drone.c5a21808.mp4",
-    "static/media/editing.0580e2c8.jpeg": "/static/media/editing.0580e2c8.jpeg",
     "static/media/email.a49e0158.png": "/static/media/email.a49e0158.png",
     "static/media/final.c76dbb27.mp4": "/static/media/final.c76dbb27.mp4",
     "static/media/football2.0c89634d.mp4": "/static/media/football2.0c89634d.mp4",
+    "static/media/forfeit.1af8d827.mp4": "/static/media/forfeit.1af8d827.mp4",
     "static/media/games-video.3d110ab9.mp4": "/static/media/games-video.3d110ab9.mp4",
     "static/media/guard.44624efa.mp4": "/static/media/guard.44624efa.mp4",
+    "static/media/influencer.a2132898.mp4": "/static/media/influencer.a2132898.mp4",
     "static/media/insta.75e0546a.png": "/static/media/insta.75e0546a.png",
     "static/media/intro3.5e52c158.mp4": "/static/media/intro3.5e52c158.mp4",
     "static/media/jeff.8fced577.jpg": "/static/media/jeff.8fced577.jpg",
@@ -32,8 +33,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b59dd841.js",
-    "static/js/2.79f55e87.chunk.js",
-    "static/css/main.36d5e01c.chunk.css",
-    "static/js/main.8959fd4b.chunk.js"
+    "static/js/2.581ce62e.chunk.js",
+    "static/css/main.76f21a5f.chunk.css",
+    "static/js/main.e364135f.chunk.js"
   ]
 }
